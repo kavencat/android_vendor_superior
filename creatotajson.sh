@@ -29,7 +29,7 @@ DAY="$(date -d @$DATE +%d/%m/%Y)"
 
 # get the zip path from out folder using the date
 zip_path=~/$sourcerom/out/target/product/$device/$2
-echo $zip_path
+
 # don't fail if there is no device json
 set +e
 
@@ -56,7 +56,7 @@ if [ -d ~/tequila_ota ]; then
 fi
 
 # if there is no json file, create one
-if [ ! -f ~/tequila_ota/devices/SuperiorOS_$device.json ]; then
+if [ ! -f ./out/target/product/$device/SuperiorOS_$device.json ]; then
   echo "No json file found, creating one"
   echo "Creating json file for $device"
   echo "{
@@ -73,19 +73,7 @@ if [ ! -f ~/tequila_ota/devices/SuperiorOS_$device.json ]; then
       \"maintainer\": \"kavencat\"
     }
   ]
-}" >~/tequila_ota/devices/SuperiorOS_$device.json
-  sleep 1
-  echo "Done"
-fi
-
-if [ ! -f ~/tequila_ota/changlogs/SuperiorOS_changelogs_wayne.txt ]; then
-echo -e 'device:'$device'
-model:Mi 6X 
-'$(echo $(date "+%Y-%m-%d"))'\n'$(echo $device: update $DAY) >> ~/tequila_ota/changlogs/SuperiorOS_changelogs_wayne.txt
-cat /home/linuxlite/桌面/update | while read line
-do
-	echo ${line} >> ~/tequila_ota/changlogs/SuperiorOS_changelogs_wayne.txt
-done
+}" >./out/target/product/$device/SuperiorOS_$device.json
   sleep 1
   echo "Done"
 fi
