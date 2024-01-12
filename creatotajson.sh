@@ -42,7 +42,7 @@ if [ -d ~/tequila_ota ]; then
   # id
   id=$(sha256sum $zip_path | cut -d' ' -f1)
   # Rom type
-  type="RELEASE"
+  type=$(echo $zip_name | cut -d "-" -f5)
   # Rom size
   size_new=$(stat -c "%s" $zip_path)
   # Rom version
