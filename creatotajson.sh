@@ -52,7 +52,7 @@ if [ -d ~/tequila_ota ]; then
   BUILD_YEAR=${BUILD_DATE:0:4}
   BUILD_MONTH=${BUILD_DATE:4:2}
   BUILD_DAY=${BUILD_DATE:6:2}
-  url="https://sourceforge.net/projects/wayney/files/"$BUILD_YEAR"-"$BUILD_MONTH"-"$BUILD_DAY"/"$zip_name".zip/download"
+  url="https://sourceforge.net/projects/wayney/files/SuperiorOS/"$BUILD_YEAR"-"$BUILD_MONTH"-"$BUILD_DAY"/"$zip_name".zip/download"
 fi
 
 # if there is no json file, create one
