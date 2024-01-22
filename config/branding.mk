@@ -45,6 +45,9 @@ PRODUCT_PACKAGES += \
     endif
 endif
 
+PRODUCT_PACKAGES += \
+    Updater
+
 ifeq ($(BUILD_WITH_GAPPS),true)
 SUPERIOR_EDITION := GAPPS
 else
