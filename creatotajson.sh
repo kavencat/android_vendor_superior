@@ -33,8 +33,6 @@ zip_path=~/$sourcerom/out/target/product/$device/$2
 # don't fail if there is no device json
 set +e
 
-if [ -d ~/tequila_ota ]; then
-
   # datetime
   timestamp=$(cat ~/$sourcerom/out/target/product/$device/system/build.prop | grep ro.build.date.utc | cut -d'=' -f2)
   # filename
@@ -53,7 +51,6 @@ if [ -d ~/tequila_ota ]; then
   BUILD_MONTH=${BUILD_DATE:4:2}
   BUILD_DAY=${BUILD_DATE:6:2}
   url="https://sourceforge.net/projects/wayney/files/SuperiorOS/"$BUILD_YEAR"-"$BUILD_MONTH"-"$BUILD_DAY"/"$zip_name".zip/download"
-fi
 
 # if there is no json file, create one
 if [ ! -f ./out/target/product/$device/SuperiorOS_$device.json ]; then
