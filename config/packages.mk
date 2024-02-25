@@ -26,7 +26,8 @@ PRODUCT_PACKAGES += \
     OmniJaws \
     Stk \
     ThemePicker \
-    ThemesStub
+    ThemesStub \
+    Recorder
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     vendor/superior/overlay \
