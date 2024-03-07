@@ -26,7 +26,7 @@ CL_GRN="\033[32m"
 
 .PHONY: bacon
 bacon: $(INTERNAL_OTA_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_OTA_PACKAGE_TARGET) $(SUPERIOR_TARGET_PACKAGE)
+	$(hide) mv -f $(INTERNAL_OTA_PACKAGE_TARGET) $(SUPERIOR_TARGET_PACKAGE)
 	$(hide) $(SHA256) $(SUPERIOR_TARGET_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(SUPERIOR_TARGET_PACKAGE).sha256sum
 	echo -e ${CL_BLD}${CL_RED}"===============================-Package complete-==============================="${CL_RED}
 	echo -e ${CL_BLD}${CL_GRN}"Zip: "${CL_RED} $(SUPERIOR_TARGET_PACKAGE)${CL_RST}
