@@ -60,7 +60,7 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-lite-3.9.1-vendorcompat
 
 # Certification
-include vendor/certification/BoardConfig.mk
+#include vendor/certification/BoardConfig.mk
 
 # Gapps
 ifeq ($(BUILD_WITH_GAPPS),true)
@@ -81,7 +81,7 @@ include vendor/superior/config/packages.mk
 include vendor/prebuilts/prebuilts.mk
 
 # ThemeOverlays
-include packages/overlays/Themes/themes.mk
+#include packages/overlays/Themes/themes.mk
 
 # Include Superior_props
 $(call inherit-product, vendor/superior/config/superior_props.mk)
