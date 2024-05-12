@@ -19,7 +19,7 @@ SUPERIOR_TARGET_UPDATEPACKAGE := $(PRODUCT_OUT)/$(SUPERIOR_VERSION)-updateimages
 
 .PHONY: updatepackage
 updatepackage: $(INTERNAL_UPDATE_PACKAGE_TARGET)
-	$(hide) ln -f $(INTERNAL_UPDATE_PACKAGE_TARGET) $(SUPERIOR_TARGET_UPDATEPACKAGE)
+	$(hide) mv -f $(INTERNAL_UPDATE_PACKAGE_TARGET) $(SUPERIOR_TARGET_UPDATEPACKAGE)
 	@echo ""
 	@echo ""
 	@echo "**************************************************"
