@@ -22,12 +22,12 @@
     </pbundle_as_map>
     <pbundle_as_map>
         <string-array name="mccmnc">
-            <item value="20826?gid1=NRJ1" />
+            <item value="20826" />
         </string-array>
         <string name="feature_flag_name">vvm_carrier_flag_el_telecom</string>
         <int name="vvm_port_number_int" value="5499" />
         <string name="vvm_destination_number_string">8860</string>
-        <string name="vvm_type_string">vvm_type_omtp_1_3</string>
+        <string name="vvm_type_string">vvm_type_omtp</string>
     </pbundle_as_map>
     <pbundle_as_map>
         <string-array name="mccmnc">
@@ -380,6 +380,14 @@
             <item value="313120" />
             <item value="313130" />
             <item value="313140" />
+            <item value="310410?gid1=3430" />
+            <item value="310410?gid1=3432" />
+            <item value="310410?gid1=3434" />
+            <item value="310410?gid1=3436" />
+            <item value="311180?gid1=3430" />
+            <item value="311180?gid1=3432" />
+            <item value="311180?gid1=3434" />
+            <item value="311180?gid1=3436" />
         </string-array>
         <int name="vvm_port_number_int" value="5499" />
         <string name="vvm_destination_number_string">94183574</string>
@@ -413,19 +421,6 @@
     </pbundle_as_map>
     <pbundle_as_map>
         <string-array name="mccmnc">
-            <item value="310410?gid1=3430" />
-            <item value="310410?gid1=3432" />
-            <item value="310410?gid1=3434" />
-            <item value="310410?gid1=3436" />
-            <item value="311180?gid1=3430" />
-            <item value="311180?gid1=3432" />
-            <item value="311180?gid1=3434" />
-            <item value="311180?gid1=3436" />
-        </string-array>
-        <string name="vvm_type_string">vvm_type_disabled</string>
-    </pbundle_as_map>
-    <pbundle_as_map>
-        <string-array name="mccmnc">
             <item value="20827" />
         </string-array>
         <int name="vvm_port_number_int" value="5499" />
@@ -445,7 +440,7 @@
         <int name="vvm_port_number_int" value="0" />
         <string name="vvm_destination_number_string">9966</string>
         <int name="vvm_application_port_number_int" value="5499" />
-        <string name="vvm_type_string">vvm_type_omtp_1_2</string>
+        <string name="vvm_type_string">vvm_type_omtp</string>
         <boolean name="vvm_cellular_data_required_bool" value="true" />
         <string-array name="carrier_vvm_package_name_string_array">
             <item value="com.cellcom.cellcomvisualvoicemail" />
